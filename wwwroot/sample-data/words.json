@@ -1,0 +1,45 @@
+﻿{
+	"weeks": [
+		{
+			"folder": "week9",
+			"words": [
+				{
+					"word": "money",
+					"filename": "money.wav"
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				},
+				{
+					"word": "",
+					"filename": ""
+				}
+			]
+		},
+		{
+			"folder": "week10",
+			"words": []
+		}
+	]
+}

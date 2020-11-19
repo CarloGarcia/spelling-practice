@@ -1,0 +1,51 @@
+﻿@page "/practice"
+@inject HttpClient Http
+
+<h1>Words to practice</h1>
+
+<p>Play each sound to hear the word to then type in the word.</p>  
+
+@if (words == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Play sound</th>
+                <th>Enter word</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var word in words)
+            {
+                <tr>
+                    <td>
+                        <audio controls>  
+                            <source src="sample-data/week9/@(word).wav" type="audio/wav">  
+                        </audio>
+                    </td>
+                    <td>
+                            <input placeholder="Enter what you hear" />
+                    </td>
+                    <td>...</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button @onclick="CheckSpelling">Check Spelling</button>
+<input type="reset" value="Reset">
+
+@code {
+    private string [] words = new string[] { "money", "most", "move", "Mr", "Mrs", "natural", "notice", "nice" } ;
+
+    private void CheckSpelling()
+    {
+        //
+    }
+}
